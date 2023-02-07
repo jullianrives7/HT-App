@@ -1,0 +1,64 @@
+/* ------------------------ FONTS --------------------------- */
+@font-face {
+  font-family: ProximaNova-Thin;
+  src: url("../public/fonts/proximanova-thin.otf");
+}
+@font-face {
+  font-family: ProximaNova-Light;
+  src: url("../public/fonts/proximanova-light.otf");
+}
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("../public/fonts/proximanova-regular.otf");
+}
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url("../public/fonts/proximanova-bold.otf");
+}
+/* ---------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  letter-spacing: .05rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font_thin: ProximaNova-Thin;
+  --font_light: ProximaNova-Light;
+  --font_regular: ProximaNova-Regular;
+  --font_bold: ProximaNova-Bold;
+  --galvanize_orange: #ef6e47;
+  --galvanize_dark_blue: #0d0f4a;
+  --accent-white: #f8f8f8;
+  --box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border: 1px solid #ccc !important;
+  border-top: none !important;
+  box-sizing: border-box !important;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  padding: 8px !important;
+  width: 100%;
+  z-index: 1;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px;
+
+  height: 10rem;
+  max-height: 10rem;
+  overflow-wrap: "break-word";
+  overflow-y: "scroll";
+}
+
+.ql-container.ql-snow > .ql-editor::-webkit-scrollbar {
+  display: none;
+}
+
+.ql-container.ql-snow > .ql-editor::-webkit-scrollbar-thumb {
+  display: none;
+}

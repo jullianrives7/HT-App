@@ -1,0 +1,498 @@
+/* =========== Student Container ============== */
+.container{
+   display: block;
+   margin: auto;
+   width: 100%;
+   height: fit-content;
+   font-family: museo-sans,Helvetica,Roboto,Arial,sans-serif
+}
+
+.StudentDashWrapper {
+   border-color: #f79020;
+   padding: .5rem;
+   display: grid;
+   grid-template-areas:
+      "StuHeader StuHeader StuHeader"
+      "StuInfo StuCheck StuTasks"
+      "StuInfo StuCheck StuTasks"
+      "ChatModal ChatModal ChatModal";
+   grid-template-columns: 1fr 1fr 1fr;
+   border-radius: 10px;
+   width: 100%;
+}
+
+/* =============== Student Header ============= */
+.SDashHeader {
+   grid-area: StuHeader;
+   display: flex;
+   flex-direction: row;
+   padding: 1rem;
+   align-items: center;
+}
+.SDashheaderCol {
+   display: flex;
+   flex-direction: column;
+   margin-right: auto;
+}
+
+#StuHeaderName {
+   margin: 1px;
+}
+
+#StuHeaderBranch {
+   margin: 1px;
+}
+
+.StuHeaderETStag {
+   color: white;
+   border-radius: 10px;
+   font-weight: bold;
+   width: fit-content;
+   padding: 5px;
+   position: relative;
+   margin-right: 5px;
+}
+
+#ETS120 {
+   /* background-color: rgba(0, 0, 255, 0.4); */
+   color: rgba(0, 0, 255, 0.4);
+   font-weight: bold;
+}
+
+#ETS90 {
+   /* background-color: rgba(255, 255, 0, 0.4); */
+   color: rgba(94, 33, 224, 0.4);
+   font-weight: bold;
+}
+
+#ETS60 {
+   /* background-color: rgba(255, 166, 0, 0.4); */
+   color: rgba(118, 82, 13, 0.4);
+   font-weight: bold;
+}
+
+#ETS30 {
+   /* background-color: rgba(255, 0, 0, 0.4); */
+   color: rgba(255, 0, 0, 0.4);
+   font-weight: bold;
+}
+
+#ETSd {
+   /* background-color: rgba(159, 235, 159, 0.4); */
+   color: rgba(17, 77, 17, 0.4);
+   font-weight: bolder;
+   left: 25%;
+}
+
+#ETSna {
+   background-color: red;
+   padding: 1em;
+}
+
+.adminColoring{
+   width: 10rem;
+   height: fit-content;
+}
+
+/* ============= Student Info =============== */
+.stuInfoETS {
+   margin-top: 5px;
+}
+
+.studentInfoCheckbox {
+   margin-top: 6px;
+}
+
+.editStudentBtnSpan {
+   /* position: relative; */
+   float: right;
+   display: grid;
+   justify-items: center;
+   color: black;
+}
+
+.studentview {
+   margin-right: 20vw;
+}
+
+.editStudentInfoBtn:hover {
+   cursor: pointer;
+   transform: scale(1.2);
+}
+
+.editStudentInfoBtn:hover+.editStudentToolTip {
+   visibility: visible !important;
+}
+
+.editStudentToolTip {
+   visibility: hidden;
+}
+
+.SDashInfocard {
+   grid-area: StuInfo;
+   max-height: 39.5rem;
+   min-height: 39.5rem;
+   display: flex;
+   justify-content: center;
+}
+
+.infoCardcontainer {
+   width: 100%;
+   background-color: #fff;
+   border-radius: 1px;
+   max-height: 39.5rem;
+   min-height: 39.5rem;
+   overflow-y: scroll;
+   box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+   border-top: 1px solid #F79020;
+   padding: 0em 1em 1em 1em;
+}
+
+.infoCardcontainer::-webkit-scrollbar {
+   display: none;
+ }
+
+.myInterestsDiv {
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.title {
+margin-left: auto;
+}
+
+.answer {
+   margin-left: 5.5px;
+}
+
+/* ============= Student Checklist ========== */
+
+.SDashChecklist {
+   grid-area: StuCheck;
+   display: flex;
+   flex-direction: column;
+   border-radius: 1px;
+   flex-wrap: nowrap;
+   align-items: center;
+   background-color: #fff;
+   max-height: 39.5rem;
+   min-height: 39.5rem;
+   border-top: 1px solid #F79020;
+   overflow-y: scroll;
+}
+
+.SDashChecklist::-webkit-scrollbar {
+   display: none;
+ }
+
+
+.checklistForm {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.editStudentChecklist {
+   display: flex;
+   flex-direction: column;
+}
+.checkboxLabel {
+   padding-top: 7px;
+}
+.checklistButtonDiv{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin-top: 20px;
+}
+.checklistButtons{
+   width: 100%;
+   margin: 2px;
+   font-family:Arial, Helvetica, sans-serif;
+   border-radius: 20px;
+   color: white;
+   transition-duration: 500ms;
+   background-color: rgb(0, 140, 128);
+   padding: 5px;
+   border: none;
+}
+
+#2 {
+   accent-color: red;
+}
+
+.checklistButtons:hover{
+   transition-duration: 500ms;
+   background-color: rgb(0, 99, 91);
+}
+
+.checkStyle {
+  accent-color: rgb(0, 140, 128);
+  margin: .5em;
+} 
+
+/* ============= Student Tasks ============== */
+
+.SDashTasks {
+   grid-area: StuTasks;
+   display: flex;
+   flex-direction: column;
+   border-radius: 1px;
+   flex-wrap: nowrap;
+   align-items: center;
+   background-color: #fff;
+   overflow-y: scroll;
+   max-height: 39.5rem;
+   min-height: 39.5rem;
+   border-top: 1px solid #F79020;
+}
+
+.SDashTasks::-webkit-scrollbar {
+   display: none;
+ }
+
+#StuTasksHeader {
+   margin: 10px;
+   color: var(--clr-bgprimary-dark);
+}
+
+.StuTasksCreateBtn {
+   font-size: 25px;
+   background: none;
+   border: none;
+   margin-bottom: 8px;
+}
+
+.StuTasksCreateBtn:hover {
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+.StuTasksCard {
+   display: grid;
+   grid-template-areas: ". title edtBtn";
+   grid-template-columns: 1fr 90% 1fr;
+   align-items: center;
+   border: solid var(--clr-nuetral-brown);
+   border-top: 3px solid #f79020;
+   border-radius: 5px;
+   margin-bottom: 8px;
+   width: 85%;
+   text-align: center;
+   color: var(--clr-accent-white);
+   background-color: var(--clr-bgsecondary-contrast);
+   box-shadow: 0px 4px 8px 0px #9b9b9b;
+   transition: box-shadow ease 0.2s, transform ease 0.1s;
+   padding: 5px;
+}
+
+.StuTasksCard:hover {
+   cursor: pointer;
+   box-shadow: 0px 6px 16px 0px #414141;
+   background-blend-mode: lighten;
+}
+
+.StuTasksCard:active {
+   box-shadow: none;
+   transform: scale(0.98);
+}
+
+.StuTasksTitle {
+   grid-area: title;
+   width: 100%;
+   text-align: center;
+}
+
+.StuTasksButtons {
+   grid-area: edtBtn;
+   color: var(--clr-accent-white);
+   font-size: 18px;
+   background: none;
+   border-radius: 5px;
+   border: none;
+   padding: 2px 5px;
+}
+
+.StuTasksButtons:hover {
+   cursor: pointer;
+}
+
+/* ============= Student Modal =============== */
+
+.SPTaskModal {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas:
+      "TaskHeader"
+      "TaskStatus"
+      "TaskStatus"
+      "TaskDesc"
+      "TaskRemarks"
+      "AddRemark";
+   gap: 12px;
+}
+
+#ModalHeader {
+   border-radius: 5px;
+   padding: 10px;
+   grid-area: TaskHeader;
+   text-align: center;
+   background-color: var(--clr-accent-white);
+}
+
+.ModalTaskStatus {
+   border-radius: 5px;
+   padding: 10px;
+   grid-area: TaskStatus;
+   background-color: var(--clr-accent-white);
+}
+
+.ModalTaskDesc {
+   border-radius: 5px;
+   padding: 10px;
+   grid-area: TaskDesc;
+   background-color: var(--clr-accent-white);
+}
+
+.ModalEditTask {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.ModalCreateTask {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.ModalTaskFormFlex {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.ModalTaskInputs {
+   display: flex;
+   flex-direction: column;
+   border-radius: 5px;
+   padding: 10px;
+   background-color: var(--clr-accent-white);
+   font-family: museo-sans,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.ModalTaskInputs>input {
+   font-family: museo-sans,Helvetica,Roboto,Arial,sans-serif;
+   background-color: rgb(232, 232, 232);
+   border-radius: 5px;
+   border: none;
+   font-size: 20px;
+   padding: 2px;
+}
+
+.ModalTaskInputs>select {
+   font-family: museo-sans,Helvetica,Roboto,Arial,sans-serif;
+   background-color: rgb(232, 232, 232);
+   border-radius: 5px;
+   border: none;
+   font-size: 20px;
+   padding: 2px;
+}
+
+.ModalTaskBtns {
+   background-color: rgba(255, 255, 255, 0.231);
+   padding: 5px;
+   width: 20%;
+   border-radius: 10px;
+   border: none;
+   place-self: center;
+}
+.ModalTaskBtns:hover {
+   background-color: #fff;
+}
+
+.DependentCard {
+   display: flex;
+   justify-content: space-between;
+   width: 40%;
+}
+
+#DependentAge {
+   font-weight: bold;
+}
+
+.label {
+   color: #de7505f2;
+   font-weight: bold;
+   width: 35%;
+   margin-bottom: 1%;
+   float: left;
+ }
+
+ .addStudentModal {
+   display: flex;
+   flex-direction: column;
+   margin-left: 27%;
+ 
+ }
+
+ .addStudentForm {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .editStudentFormInputs {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center;
+   align-items: center; */
+ }
+
+ .editStudentBtn {
+   margin-right: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ .editInterestsTextarea {
+   width: 40rem;
+   min-height: 8rem;
+   margin-left: 1%;
+ }
+
+ .interestLabel {
+   color: #de7505f2;
+   font-weight: bold;
+   float: left;
+ }
+ .personalInfoSpacing {
+   padding-top: 1%;
+   margin-bottom: 0;
+   text-decoration: underline;
+ }
+
+ 
+/* =============== UPDATED STYLES =============== */
+.LogOutTab{
+   display: flex;
+   flex-direction: row;
+   font-size: 1.5vw;
+   gap: .5vw;
+   margin-right: 0;
+   background-color: rgb(212, 80, 6);
+   color: white;
+   padding: .5vw;
+}
+.LogOutLink{
+   text-decoration: none;
+}
+.LogOutTab:hover{
+   color: rgb(10, 0, 78);
+   cursor: pointer;
+}
+
+.LogOutTab > svg {
+   align-self: center;
+}

@@ -1,0 +1,151 @@
+
+/* ~~~~THIS IS THE STYLING FOR ARCHIVED COHORTS ~~~~*/
+.cohorts{
+    display:flex;
+    flex-flow:column;
+    height: 40vh;
+    padding: 1em;
+    margin:auto;
+    background: #e0eaf8;
+    color: #0d0f4a;
+}
+
+.searchC{
+    height: 2em;
+    vertical-align:top;
+}
+
+.searchC button{
+   
+    height:3em;
+    width:2em;
+    border-radius: .7em;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    border: none;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+    margin-top: .5rem;
+    background: #f6efe7;
+}
+
+.searchC button:hover{
+    font-size: 1.1rem;
+    opacity: 1;
+    color: white;
+    background-color: #F79020;
+    cursor: pointer;
+}
+
+.searchC input {
+    width:25em;
+    height: 3em;
+    border-radius: .7em;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius:0%;
+    border-width: 1px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+}
+
+.searchC input:focus {
+    outline:none;
+}
+
+.students {
+    display:flex;
+    flex-flow:column;
+    height:35vh;
+    padding: 1em;
+    margin:auto;
+    background: #e0eaf8;
+    
+}
+
+.searchS{
+    height: 2em;
+    vertical-align:top;
+}
+
+.searchS button{
+   
+    height:3em;
+    width:2em;
+    border-radius: .5em;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    border: none;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+    margin-top: .5rem;
+    background: #f6efe7;
+}
+
+.searchS button:hover{
+    font-size: 1.1rem;
+    opacity: 1;
+    color: white;
+    background-color: #F79020;
+    cursor: pointer;
+}
+
+.searchS input {
+    width:25em;
+    height: 3em;
+    border-radius: .5em;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius:0%;
+    border-width: 1px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+}
+
+.searchS input:focus {
+    outline:none;
+} 
+
+.cardDeck{
+    display: flex;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.card{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 15%;
+    height: 8em;
+    border-top:1px solid #F79020;
+    /* border-width: 1px; */
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,.35);
+    color:#0d0f4a;
+    background:#ffffff;
+}
+
+.card:hover{
+    background-color: #ff6900;
+}
+
+.card h3,
+.card h4 {
+    margin-top: 2px;
+    margin-bottom: 0%;
+}
+
+.card h5 {
+    font-size: medium;
+}
+
+.students h2,
+.cohorts h2 {
+    color: #0d0f4a;
+    border-bottom:1px solid #F79020;
+    max-width: fit-content;
+}
+
+.listName {
+    cursor: pointer;
+}
+
+.listName:hover {
+    background-color: #b9b5b59e;
+}
